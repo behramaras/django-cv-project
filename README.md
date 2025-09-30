@@ -7,7 +7,6 @@ This is a web application built using Python and Django. The project demonstrate
 - User-friendly interface for seamless interaction
 - Data management using Django models and SQLite database
 - Dynamic web pages with template rendering
-- Forms for user input and data submission
 - Responsive and clean design
 
 ## Technologies Used
