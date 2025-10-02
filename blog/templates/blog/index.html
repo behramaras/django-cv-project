@@ -59,11 +59,7 @@
                     <div class="social-icons">
                         <a class="social-icon" href="{{ linkedin|default:'#' }}"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="{{ github|default:'#' }}"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-primary" 
-                        href="{{ url_for('static', filename='Behram_Aras_CV.pdf') }}" 
-                        download>
-                        Download CV
-                        </a>
+                        <a class="btn btn-primary" href="{% static 'Behram_Aras_CV.pdf' %}">Download CV</a>
                     </div>
                 </div>
             </section>
