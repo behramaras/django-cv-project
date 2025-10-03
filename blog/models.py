@@ -49,7 +49,16 @@ class Skill(models.Model):
     def __str__(self):
         return self.name
 
+class Project(models.Model):
+    title = models.CharField(max_length=200, default="Unkown")
+    description = models.TextField(default="No description")
+    link = models.URLField(blank=True, null=True)
+    image = models.ImageField(upload_to='projects/', blank=True, null=True)
+    technologies = models.CharField(max_length=200, blank=True)
 
+    def __str__(self):
+        return self.title
+    
 class Interest(models.Model):
     description = models.TextField(default="No description")
 

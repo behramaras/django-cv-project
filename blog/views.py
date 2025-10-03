@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import About, Experience, Education, Certificate, Skill, Interest
+from .models import About, Experience, Education, Certificate, Skill, Project, Interest
 
 def index(request):
     about = About.objects.first()  
@@ -17,6 +17,7 @@ def index(request):
         "education": Education.objects.all(),
         "certificates": Certificate.objects.all(),
         "skills": Skill.objects.all(),
+        "projects": Project.objects.all(),
         "interests": Interest.objects.all(),
     }
     return render(request, "blog/index.html", context)
