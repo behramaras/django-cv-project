@@ -2860,6 +2860,12 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #bd5d38;
   --bs-btn-disabled-border-color: #bd5d38;
+  transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3); 
 }
 
 .btn-secondary {
@@ -2962,12 +2968,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #f8f9fa;
   --bs-btn-disabled-border-color: #f8f9fa;
-  transition: transform 1s ease, box-shadow 1s ease;
-}
-
-.btn-primary:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3); 
 }
 
 .btn-dark {
