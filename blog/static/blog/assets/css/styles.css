@@ -2860,7 +2860,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #bd5d38;
   --bs-btn-disabled-border-color: #bd5d38;
-  transition: transform 1s ease, box-shadow 1s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .btn-primary:hover {
