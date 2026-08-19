@@ -9,3 +9,7 @@ admin.site.register(Skill)
 admin.site.register(Interest)
 admin.site.register(Project)
 
+@admin.register(Experience)
+class ExperienceAdmin(admin.ModelAdmin):
+    list_display = ('title', 'company', 'order')
+    list_editable = ('order',)
