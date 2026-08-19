@@ -20,6 +20,10 @@ class Experience(models.Model):
     location = models.CharField(max_length=100, blank=True)
     date = models.CharField(max_length=100, default="Unknown")
     description = models.TextField(default="No description")
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order']
 
     def __str__(self):
         return f"{self.title} - {self.company}"
